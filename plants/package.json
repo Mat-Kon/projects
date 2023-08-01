@@ -1,0 +1,10 @@
+{
+    "name": "plants",
+    "lockfileVersion": 2,
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "style": "sass --watch /src/index.js"
+    }
+
+  }
