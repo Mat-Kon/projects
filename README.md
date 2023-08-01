@@ -1,4 +1,4 @@
 # Links to projects
 
-**[Plants](https://mat-kon.github.io/projects/plants/)**
+**[Plants](https://mat-kon.github.io/projects/plants/)**\
 **[Momentum](https://mat-kon.github.io/projects/momentum/)**
