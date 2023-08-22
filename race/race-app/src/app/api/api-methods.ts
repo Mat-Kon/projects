@@ -59,6 +59,8 @@ const colorGenerator = (): string => {
 };
 
 export const checkServerAvailability = () => {
+  const body = document.querySelector('body');
+  const errMessage = document.createElement('h1');
   const xhr = new XMLHttpRequest();
   const serverUrl = apiUrl;
 
@@ -73,6 +75,8 @@ export const checkServerAvailability = () => {
   };
 
   xhr.onerror = () => {
+    errMessage.textContent = 'Запусти или правильно настрой сервер! https://github.com/Mat-Kon/projects/tree/race/race/api-for-race';
+    body?.prepend(errMessage);
     throw new Error('Запусти или правильно настрой сервер!');
   };
 
