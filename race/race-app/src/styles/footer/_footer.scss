@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+  font-size: 50px;
+}
+
+.logo-rss {
+  filter: drop-shadow(-5px -2px 2px #f295f2);
+}
+
+.rss-link:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.github-link {
+  color: #000000;
+  text-decoration: none;
+  filter: drop-shadow(5px -2px 2px #f295f2);
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin media-table {
+  @media screen and (max-width: $table-width) { @content; }
+}
+
+@mixin media-mobile {
+  @media screen and (max-width: $mobile-width) { @content; }
+}

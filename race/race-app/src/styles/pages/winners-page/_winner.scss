@@ -1,0 +1,40 @@
+.winners-page {
+  display: block;
+}
+
+.winners-page.hidden {
+  display: none;
+}
+
+.table-winners {
+  width: 25%;
+  margin: 10px;
+  color: #ffffff;
+  background-color: #3900a538;
+  & th {
+    transition: all 0.5s;
+  }
+  & th:nth-child(2):hover,
+    th:nth-child(3):hover {
+    color: #ffffff;
+    cursor: default;
+  }
+  & th:hover {
+    color: #498ff9;
+    cursor: pointer;
+  }
+  & td {
+    text-align: center;
+  }
+}
+
+.popup {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  color: #efa6f1;
+  margin: 0px auto;
+  filter: drop-shadow(8px 0px 20px #041cf7);
+}
