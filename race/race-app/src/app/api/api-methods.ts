@@ -61,6 +61,7 @@ const colorGenerator = (): string => {
 export const checkServerAvailability = () => {
   const body = document.querySelector('body');
   const errMessage = document.createElement('h1');
+  errMessage.style.color = '#ffffff';
   const xhr = new XMLHttpRequest();
   const serverUrl = apiUrl;
 
