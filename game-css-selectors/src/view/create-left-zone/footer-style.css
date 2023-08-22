@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 60%;
+
+  margin: auto;
+  padding: 20px 0;
+
+  font-size: 20px;
+}
+
+.github {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.rss-link {
+  transition: 0.5s;
+}
+
+.github:hover,
+.rss-link:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,76 @@
+.edit {
+  position: relative;
+  display: flex;
+
+  width: 90%;
+  height: 400px;
+
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+
+  border-radius: 4px;
+  background-color: #222020;
+}
+
+.css-editor, .html-viewer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit__headers {
+  padding: 10px;
+
+  color: #a5a3a3;
+  border: 1px solid #585757;
+  border-left: none;
+  background-color: #333131;
+}
+
+.file-name {
+  float: right;
+  opacity: 0.5;
+}
+
+.file-window {
+  width: calc(100% - 1px);
+  min-height: 360px;
+
+  border: 1px solid #585757;
+  border-left: none;
+  border-top: none;
+
+  background-color: #e4dfdf;
+  resize: none;
+}
+.html-viewer .file-window {
+  background-color: #222020;
+}
+
+@keyframes blinking {
+  0% {
+    background-color: #6c6cf3;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #6c6cf3;
+  }
+}
+
+#edit-css .ace_active-line {
+background-color: #6c6cf3;
+  animation: blinking 1s infinite;
+}
+
+#edit-html .ace_gutter-layer {
+  background-color: #333131;
+}
+
+#edit-html .ace_gutter-cell.ace_gutter-active-line,
+#edit-html .ace_gutter-cell {
+  background-color: #333131;
+  color: #e4dfdf;
+}

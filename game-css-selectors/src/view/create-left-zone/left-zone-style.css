@@ -1,0 +1,17 @@
+.left-zone {
+  position: relative;
+  width: calc(100% - 400px);
+  text-align: center;
+
+  background-color: #2d2f2f;
+}
+
+.order {
+  position: relative;
+  margin: 0;
+  padding: 15px 0;
+
+  text-align: center;
+
+  color: #ffffff;
+}

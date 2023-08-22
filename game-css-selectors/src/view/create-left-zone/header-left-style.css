@@ -1,0 +1,16 @@
+.header-left {
+  text-align: center;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+.header__link:hover {
+  opacity: 0.5;
+}
+
+.heading {
+  margin-top: 0;
+  padding-top: 20px;
+}

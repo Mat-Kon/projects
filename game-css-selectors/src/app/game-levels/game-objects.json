@@ -1,0 +1,33 @@
+[
+  {
+    "level": 1,
+    "quantityCreateObj": 2,
+    "winLevel": "plate",
+    "htmlEditorValue": "<div class=\"table\">\n    <plate/>\n    <plate/>\n</div>",
+    "tag": "div",
+    "className": "plate",
+    "order": "Select the plates",
+    "descriptions": "Selects all elements of type.\nType refers to the type of tag, so 'div',\n'p' and 'ul' are all different element types."
+  },
+  {
+    "level": 2,
+    "quantityCreateObj": 3,
+    "winLevel": "apple",
+    "htmlEditorValue": "<div class=\"table\">\n    <plate/>\n    <apple/>\n    <plate/>\n</div>",
+    "tag": "div",
+    "className": "plate apple",
+    "order": "Select the apple",
+    "descriptions": "Selects all elements of type.\nType refers to the type of tag, so 'div',\n'p' and 'ul' are all different element types."
+  },
+  {
+    "level": 3,
+    "quantityCreateObj": 3,
+    "winLevel": "plate:nth-child(2)",
+    "sccEditorValue": "\n{\n/*Styles would go here*/\n}",
+    "htmlEditorValue": "<div class=\"table\">\n    <plate/>\n    <plate/>\n    <plate/>\n</div>",
+    "tag": "div",
+    "className": "plate",
+    "order": "Select the second plate",
+    "descriptions": "Nth Child Pseudo-selector\nSelect an element by its order in another element\n:nth-child(A)\nSelects the nth (Ex: 1st, 3rd, 12th etc.)\nchild element in another element."
+  }
+]
