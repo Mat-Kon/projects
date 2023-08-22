@@ -1,0 +1,15 @@
+.reset-btn {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: $close-color;
+  box-shadow: -2px -3px 2px 2px #cf9dea, 2px 2px 4px 3px #6b03a3;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
