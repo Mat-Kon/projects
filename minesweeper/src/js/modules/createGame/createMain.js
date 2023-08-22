@@ -1,6 +1,6 @@
 import { timer } from "./createTimer.js";
 
-let quantityCell = 100;
+export const quantityCell = 100;
 let quantityMine = 10;
 export let clickCounter = 0;
 
@@ -13,17 +13,12 @@ const createGameZone = () => {
   body.append(main);
   main.append(gameZone);
 };
-createGameZone();
 
 const createCell = () => {
-  const cell = document.createElement('div');
   const main = document.querySelector('.game-zone');
+  const cell = document.createElement('div');
   cell.classList.add('cell');
   main.append(cell);
-};
-
-for (let i = 0; i < quantityCell; i++) {
-  createCell();
 };
 
 const createMine = (num) => {
@@ -66,7 +61,6 @@ const appendMine = () => {
     }
   });
 }
-appendMine();
 
 const createResetBtn = () => {
   const main = document.querySelector('.main');
@@ -75,4 +69,10 @@ const createResetBtn = () => {
   resetBtn.textContent = 'Reset';
   main.before(resetBtn);
 }
-createResetBtn();
+
+export {
+  createGameZone,
+  createCell,
+  appendMine,
+  createResetBtn
+}

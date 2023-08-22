@@ -1,11 +1,6 @@
-import * as createTimer from './modules/createGame/createTimer.js';
-import * as createElement from './modules/createGame/createMain.js';
-import * as createHowManyFlags from './modules/createGame/createFlagsContain.js';
-import * as soundGame from './modules/gameLogic/soundInGame.js';
 import '../style/sass/main.scss';
-import * as openCell from './modules/gameLogic/openCell.js';
-import * as disableCell from './modules/gameLogic/disableCell.js';
-import * as gameOverToFindMine from './modules/gameLogic/gameOver.js';
-import * as quantityMines from './modules/gameLogic/quantityMines.js';
-import * as gameWin from './modules/gameLogic/gameWin.js';
-import * as resetGame from './modules/gameLogic/resetGame.js';
+import app from './modules/gameLogic/app';
+import render from './modules/createGame/render';
+
+render();
+app();

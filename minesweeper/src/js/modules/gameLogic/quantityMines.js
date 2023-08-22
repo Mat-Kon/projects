@@ -87,7 +87,26 @@ const getQuantityMines = (className) => {
   quantityMines = [];
 };
 
-const listenerClickCell = () => {
+const quantityChangeColor = (num) => {
+  if (num === 0) {
+    return 'green';
+  }
+  if (num === 1) {
+    return 'darksalmon'
+  }
+  if (num === 2) {
+    return 'orange';
+  }
+  if (num === 3) {
+    return 'red';
+  }
+  if (num === 4 ) {
+    return 'indigo'
+  }
+  return 'black';
+}
+
+export const listenerClickCell = () => {
   const gameZone = document.querySelector('.game-zone');
   gameZone.addEventListener('click', (event) => {
     if (event.target.className === 'cell disable') {
@@ -109,10 +128,9 @@ const listenerClickCell = () => {
       }
     }
   });
-}
-listenerClickCell()
+};
 
-function getMatrix() {
+export function getMatrix() {
   const cells = document.querySelector('.game-zone').children;
   const matrix = [];
   let line = [];
@@ -125,23 +143,3 @@ function getMatrix() {
   }
   return matrix;
 };
-getMatrix();
-
-const quantityChangeColor = (num) => {
-  if (num === 0) {
-    return 'green';
-  }
-  if (num === 1) {
-    return 'darksalmon'
-  }
-  if (num === 2) {
-    return 'orange';
-  }
-  if (num === 3) {
-    return 'red';
-  }
-  if (num === 4 ) {
-    return 'indigo'
-  }
-  return 'black';
-}

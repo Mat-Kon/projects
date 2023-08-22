@@ -7,7 +7,6 @@ const disableCell = () => {
     }
   });
 }
-disableCell();
 
 const flagsCounter = () => {
   const flagsContent = document.querySelector('.flags__content');
@@ -33,4 +32,8 @@ const flagsCounter = () => {
     }
   });
 }
-flagsCounter();
+
+export {
+  disableCell,
+  flagsCounter
+}

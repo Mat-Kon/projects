@@ -1,4 +1,4 @@
-const createFlagsContain = () => {
+export const createFlagsContain = () => {
   const header = document.querySelector('.header');
   const flagsContain = document.createElement('div');
   const flagsContent = document.createElement('p');
@@ -9,4 +9,3 @@ const createFlagsContain = () => {
   header.append(flagsContain);
   flagsContain.append(flagsContent);
 }
-createFlagsContain();

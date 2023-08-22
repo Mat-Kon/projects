@@ -1,4 +1,4 @@
-const gameWin = () => {
+export const gameWin = () => {
   const cells = document.querySelectorAll('.cell');
   const mines = document.querySelectorAll('.mines');
   const gameZone = document.querySelector('.game-zone');
@@ -36,4 +36,3 @@ const gameWin = () => {
     }
   });
 }
-gameWin()

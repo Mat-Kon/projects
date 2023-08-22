@@ -1,4 +1,4 @@
-const openCell = () => {
+export const openCell = () => {
   const gameZone = document.querySelector('.game-zone');
   gameZone.addEventListener('click', (event) => {
     const cell = event.target;
@@ -12,4 +12,3 @@ const openCell = () => {
     }
   });
 }
-openCell();

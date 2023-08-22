@@ -1,4 +1,4 @@
-const gameOverToFindMine = () => {
+export const gameOverToFindMine = () => {
   const gameZone = document.querySelector('.game-zone');
   const timerContain = document.querySelector('.timer-contain');
   const cells = gameZone.children;
@@ -21,4 +21,3 @@ const gameOverToFindMine = () => {
     }
   });
 };
-gameOverToFindMine();
